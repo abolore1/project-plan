@@ -1,0 +1,32 @@
+[debug] [2020-11-16T06:24:33.947Z] ----------------------------------------------------------------------
+[debug] [2020-11-16T06:24:33.951Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\JAVA MAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --except functions
+[debug] [2020-11-16T06:24:33.952Z] CLI Version:   8.15.1
+[debug] [2020-11-16T06:24:33.952Z] Platform:      win32
+[debug] [2020-11-16T06:24:33.952Z] Node Version:  v14.15.0
+[debug] [2020-11-16T06:24:33.954Z] Time:          Mon Nov 16 2020 07:24:33 GMT+0100 (West Africa Standard Time)
+[debug] [2020-11-16T06:24:33.955Z] ----------------------------------------------------------------------
+[debug] [2020-11-16T06:24:33.955Z] 
+[debug] [2020-11-16T06:24:33.976Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-16T06:24:33.977Z] > authorizing via signed-in user
+[debug] [2020-11-16T06:24:33.978Z] [iam] checking project myplan-project for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-16T06:24:33.987Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/myplan-project:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-16T06:24:45.356Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com
+[debug] [2020-11-16T06:24:45.358Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/myplan-project  
+ 
+[debug] [2020-11-16T06:24:59.621Z] Server Error. socket hang up
+[debug] [2020-11-16T06:25:10.945Z] FirebaseError: Server Error. socket hang up
+    at Request._callback (C:\Users\JAVA MAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\JAVA MAN\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:486:12)
+    at Request.onRequestError (C:\Users\JAVA MAN\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:327:22)
+    at ClientRequest.EventEmitter.emit (domain.js:486:12)
+    at TLSSocket.socketOnEnd (_http_client.js:493:9)
+    at TLSSocket.emit (events.js:327:22)
+    at TLSSocket.EventEmitter.emit (domain.js:486:12)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[error] 
+[error] Error: Failed to get Firebase project myplan-project. Please make sure the project exists and your account has permission to access it.

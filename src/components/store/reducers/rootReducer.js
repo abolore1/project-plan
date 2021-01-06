@@ -1,0 +1,17 @@
+import authReducer from './authReducer'
+import projectReducer from './projectReducer'
+import {combineReducers} from 'redux'
+import {firestoreReducer} from 'redux-firestore'
+import {firebaseReducer} from 'react-redux-firebase'
+import networkReducer from "./networkReducer"
+
+const rootReducer = combineReducers({
+    auth:authReducer,
+    project:projectReducer,
+    firestore:firestoreReducer,
+    firebase:firebaseReducer,
+    network: networkReducer
+ });
+
+
+export default rootReducer
